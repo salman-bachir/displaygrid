@@ -15,16 +15,10 @@ p{
    color: blue;
  }
 
-/* Todos los párrafos contenidos en "primero" */
-#primero p
-{
-  color: red;
-}
-
 /* Todos los enlaces la pagina */
 a
 {
-  color: rgb(0, 255, 60);
+  color: rgb(21, 0, 255);
 }
 
 a:hover {
@@ -40,65 +34,15 @@ a:hover {
 }
     
 .div1 {
+    background-color:#a7d2b9;
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
 .div2 {
-    grid-column: 1/2;
+    
+    grid-column: 2/2;
     grid-row: 4/0;
-}
-  }
-}
-
-/* For devices with a minimum width of 992px (Large) */
-@media screen and (min-width: 768px) {
-  body {
-    
-/* Todos los elementos de la pagina */
-*{
-  font-size: 16px;
-  font-family: "Times New Roman", Times, serif;
-}
-
-/* Todos los parrafos de la pagina */
-p{
-   color: blue;
- }
-
-/* Todos los párrafos contenidos en "primero" */
-#primero p
-{
-  color: red;
-}
-
-/* Todos los enlaces la pagina */
-a
-{
-  color: rgb(0, 255, 60);
-}
-
-a:hover {
-  color: yellow
-
-}
-
-.parent {
-    display: grid;
-    grid-template-columns: 5/1fr;
-    grid-template-rows: 5/1fr;
-    gap: 8px;
-}
-    
-.div1 {
-    grid-column: span 3 / span 3;
-    grid-row: span 5 / span 5;
-}
-
-.div2 {
-    grid-column: span 2 / span 2;
-    grid-row: span 5 / span 5;
-    grid-column-start: 4;
 }
   }
 }
